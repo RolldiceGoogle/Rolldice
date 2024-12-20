@@ -1,0 +1,287 @@
+ /* Reset dasar */
+    
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%; /* Pastikan elemen tidak melebihi viewport */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #202124;
+    color: #e8eaed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 100%; /* Pastikan elemen tidak melebihi viewport */
+    transition: opacity 0.5s ease-in-out; 
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards; /* Animasi 1 detik */
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+/* Style untuk header */
+header {
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #202124;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Elemen tersusun vertikal */
+    align-items: center; /* Semua elemen di tengah */
+    position: relative; /* Basis untuk positioning */
+}
+
+/* Style teks Google */
+.google-title {
+    font-size: 38px;
+    font-weight: bold;
+    color: #e8eaed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Container untuk lonceng dan profil */
+.right-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Jarak antara ikon lonceng dan foto profil */
+    position: absolute; /* Posisi absolut */
+    right: 20px; /* Tempatkan di kanan */
+    top: 20px; /* Posisi di atas */
+}
+
+.icon-bell {
+    background: none;
+    border: none;
+    color: #ffb900; /* Warna lonceng */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Style untuk foto profil */
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+    object-fit: cover;
+   
+}
+
+/* Style untuk search container */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #3c4043;
+    padding: 10px 15px;
+    border-radius: 24px;
+    width: 300px; /* Lebar search bar */
+    margin-top: 20px; /* Beri jarak dari atas */
+}
+
+.search-container input {
+    border: none;
+    background: transparent;
+    color: #e8eaed;
+    font-size: 16px;
+    outline: none;
+    flex: 1;
+}
+
+.search-container button {
+    background: none;
+    border: none;
+    color: #e8eaed;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+.search-container button:hover {
+    color: #ffffff;
+}
+
+/* Menu Tab */
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%; /* Sesuaikan dengan viewport */
+    background-color: #202124;
+    width: 100%; /* Sesuaikan lebar elemen dengan viewport */
+    margin: 0 auto; /* Pusatkan elemen */
+    max-width: 100%; /* Batasi lebar maksimum */
+    box-shadow:  rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+
+nav a {
+    color: #e8eaed;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+nav a.active {
+    border-bottom: 2px solid #8ab4f8;
+}
+
+/* Search Results */
+    main {
+        padding: 0; /* Hilangkan padding di main jika ada */
+        margin: 0 auto; /* Pusatkan elemen jika dibutuhkan */
+        width: 100%;
+    }
+    
+
+
+    .search-result1  {
+        height: 80px;
+        align-items: center;
+        display: flex;
+        margin-left: 20px;
+        font-size: 15px;
+        
+        
+      }
+.bcrs {
+
+    box-shadow:  rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+
+
+
+    .search-result  {
+      height: 60px;
+      align-items: center;
+      display: flex;
+      margin-left: 20px;
+      
+      
+        
+    }
+
+.search-result p {
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+.result-card {
+    width: 320px;
+    height: 30px;
+    background-color: #303134;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Untuk posisi relatif */
+}
+
+/* Panah ke bawah */
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff; /* Warna panah */
+    display: inline-block;
+}
+
+
+.result-card1 {
+    display: flex;
+    align-items: center; /* Menyamakan posisi vertikal */
+    background-color: #303134; /* Warna abu-abu tua */
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    max-width: 600px; /* Batas lebar card */
+}
+
+.profile-img1 {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%; /* Gambar lingkaran */
+    margin-right: 15px; /* Jarak dengan teks */
+    margin-top: -100px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 16px;
+    
+    margin: 0 0 5px 0; /* Margin bawah untuk judul */
+    justify-content: space-between; /* Menjaga spasi antara teks dan titik tiga */
+    align-items: center; /* Menyamakan posisi vertikal */
+    margin-top: -25px;
+
+
+}
+
+.title1 {
+    font-size: 16px;
+    color: #429bfa; /* Warna ungu judul */
+    margin: 0 0 5px 0; /* Margin bawah untuk judul */
+    margin-left: -50px;
+    justify-content: space-between; /* Menjaga spasi antara teks dan titik tiga */
+    align-items: center; /* Menyamakan posisi vertikal */
+
+}
+
+.description {
+    font-size: 14px;
+    color: #e8eaed; /* Warna teks abu terang */
+    margin: 0;
+    margin-left: -50px;
+}
+
+.description1 {
+    font-size: 14px;
+    color: #e8eaed; /* Warna teks abu terang */
+    margin: 0;
+    height: 40px;
+  
+}
+
+
+.menu-dots {
+    font-size: 18px; /* Ukuran titik tiga */
+    color: #e8eaed; /* Warna ikon titik tiga */
+    cursor: pointer; /* Pointer saat di-hover */
+    margin-left: 320px; /* Posisi ke paling kanan */
+    margin-top: 40px;
+}
+
+.titik {
+    margin-top: 5px;
+}
